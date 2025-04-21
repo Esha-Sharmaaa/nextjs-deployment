@@ -6,7 +6,7 @@ interface Props {
   }
   
   async function fetchUser(username: string) {
-    const res = await fetch(`http://localhost:3000/api/github?username=${username}`, {
+    const res = await fetch(`https://24d902be.nextjs-deployment.pages.dev/api/github?username=${username}`, {
       cache: 'no-store'
     });
     if (!res.ok) {
