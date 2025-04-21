@@ -6,6 +6,7 @@ interface Props {
   }
   
   async function fetchUser(username: string) {
+    console.log("Bug incoming"
     const res = await fetch(`https://24d902be.nextjs-deployment.pages.dev/api/github?username=${username}`, {
       cache: 'no-store'
     });
